@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+			}
+
+			section{ margin-top: 50px;}
+	
+			/* Style the header */
+			
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			font-weight: bold;
+			float: left;
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			width:20%;
+			height: 580px;
+			font-size: 20px;
+			padding: 20px;
+			background-color: rgb(1, 16, 44);
+			box-shadow:  -16px 16px 32px #c3aae1,
+             16px -16px 32px #f3d4ff;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 5px;
+			}
+
+			nav ul li {padding: 10px;}
+
+			nav ul li  a {
+			color: white;
+			text-decoration: none;
+			
+			}
+
+			article {
+			height: auto;
+			float: left;
+			padding: 20px;
+			width: 80%;
+			font-size: 14px;
+			border-radius: 0px 50px 50px 0px;
+			background: rgba( 130, 252, 192, 0.05 );
+			box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+			backdrop-filter: blur( 10px );
+			-webkit-backdrop-filter: blur( 10px );
+			border-radius: 0px 10px 10px 0px;
+			border: 1px solid rgba( 255, 255, 255, 0.18 );
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			form{ 
+				
+				background-color:rgba(255, 139, 139, 0.197);
+				padding: 20px 10px;
+				border-radius: 10px;
+				}
+
+				#nome, #email,#mensagem{width: 40%;}
+
+				input, textarea{
+					border-radius: 10px;
+					margin-bottom: 20px;
+					border: none;
+					height: 30px;
+			
+				}
+
+				input[type="submit"] {
+  					width: 120px;
+  					margin-top: 40px;
+					background-color: #d52a4d;
+					color: white;
+ 					
+					}
+
+				h1{font-size: 24px}
+
+				input[type="radio"],[type="checkbox"] {height: 10px;}
+			
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			  section{margin-top: 0px;}
+			  #nome, #email,#mensagem{width: 80%;}
+			}
+			</style>
+	</head>
+	<body>
+
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="formulario.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<form method="post">
+
+					<h1>Contato</h1>
+					
+
+					<div>
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="10"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual linguagem você prefere?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<input type="radio" name="linguagens" value="css"> CSS
+							<input type="radio" name="linguagens" value="javascript"> JavaScript
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais linguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="html"> HTML
+							<input type="checkbox" name="linguagens" value="css"> CSS
+							<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit" >
+					</div>	
+
+				</form>
+				
+			</article>
+
+
+		</section>
+
+		
+		
+	</body>
+</html>

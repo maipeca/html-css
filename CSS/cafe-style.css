@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+h1{
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: #F4EBD0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+  url(../images/onecoffe.jpg)  no-repeat;
+  background-size:cover;
+  color: #F4EBD0;
+  background-position: center;
+
+}
+ 
+
+a{ 
+    font-size: 1.8rem;
+    color: #F4EBD0;
+    text-decoration: none;
+
+    
+    }
+
+    a:hover{color: #D6AD60;}
+
+/* Style the header */
+header {
+
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+ margin-top: 4rem;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  margin-top: 6rem;
+}
+
+nav ul li {margin-top: 2rem;}
+
+article {
+ 
+  float: left;
+  padding: 20px;
+  width: 80%;
+ background-color:  rgba(255, 255, 255, 0.143); 
+  height: 700px;
+  
+}
+
+
+
+/* Clear floats after the columns */
+section::after {
+  
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  justify-content:right;
+  background-color: #000000;
+}
+
+.horario, .pedido{ width: 15%; margin-right: 2.5rem;}
+
+ h3{text-align: right; border-bottom: 2px solid  #B68D40;}
+
+ p{ text-align: right;}
+
+ img{width: 200px; display: block; margin: 20px auto; filter: grayscale(80%)}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 768px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+    footer{display: block; justify-content: center;}
+    .horario, .pedido{ width: 95%; margin-right: 0rem; margin-top: 2rem;}
+    nav ul{margin-top: 0rem; text-align: center;}
+    nav{margin-top: 0rem;}
+    a{margin-left: 0rem; font-size: 1.4rem;}
+    h1{font-size: 3rem;}
+    iframe{margin-top: 2rem;}
+   
+  }
+
+
+

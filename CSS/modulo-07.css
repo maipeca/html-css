@@ -1,0 +1,113 @@
+@import url('tabelas.css');
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+  width: 100%;
+	background: url('../images/cake.jfif') center top space repeat #020202;
+}
+
+section{width: 100%;}
+h1 {
+	font-size: 2.8rem;
+  font-family: 'Limelight', cursive;
+}
+
+h3 {
+    color:#E8E8E6;
+    font-size: 3.0rem;
+     text-align: center;
+     margin-top: 2rem;}
+
+header {
+  background-color: #211F1E;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+
+section{
+  height: auto;
+  background: rgba(255, 255, 255, 0.264);
+}
+
+.table-container>h3{
+  color: white; 
+  margin-bottom: 5px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+
+table{
+  width: 70%;
+  margin: 0 auto;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #44443B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;}
+
+
+  @media (max-width: 768px) {
+    article{
+      width: 100%;
+      height: auto;
+    }
+    .table-container{padding: 0rem;}
+    
+    table td{ font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+    table th{ font-size: 1.2rem; padding: 0.5rem;}
+    }
+
+    @media (max-width: 468px) {
+      article {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+      }
+      .table-container{padding: 0rem;}
+      
+      table td{ font-size: 1.0rem;
+        padding: 0.3rem;
+      }
+      table th{ font-size: 1.0rem; padding: 0.3rem;}
+      }
